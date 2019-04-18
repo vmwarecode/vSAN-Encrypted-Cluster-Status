@@ -1,0 +1,369 @@
+{
+   "dashboards": [{
+      "autoswitchEnabled": false,
+      "columnCount": 1,
+      "columnProportion": "1",
+      "creationTime": 1553720831877,
+      "dashboardNavigations": {},
+      "description": "",
+      "disabled": false,
+      "gridsterMaxColumns": 12,
+      "hidden": false,
+      "homeTab": false,
+      "id": "1635b350-c49c-4af5-9509-475ae012d9b3",
+      "importAttempts": 0,
+      "importComplete": true,
+      "isDefault": false,
+      "locked": false,
+      "name": "vSAN Encryption Status",
+      "rank": 2,
+      "shared": false,
+      "states": [],
+      "temporary": false,
+      "userId": "f11188c1-8549-42d5-87a2-040da9f4eede",
+      "widgetInteractions": [
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "4e0d9824-f826-4107-ac94-72f0bcb97312",
+            "widgetIdReceiver": "5dee045d-a4b1-4fa6-ab2c-e6114b9881a5"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "4e0d9824-f826-4107-ac94-72f0bcb97312",
+            "widgetIdReceiver": "cd57ab45-4d5d-4a48-bb8b-93c85a43c767"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "4e0d9824-f826-4107-ac94-72f0bcb97312",
+            "widgetIdReceiver": "ffef1dbc-6262-4cc7-a95e-cb60c360dbf4"
+         }
+      ],
+      "widgets": [
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [{
+                  "boxLabel": "Resync Status",
+                  "metricKey": "vsan|resync|status",
+                  "metricName": "vSAN|Resync|Status",
+                  "resourceKindId": "resourceKind:id:0_::_"
+               }],
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [{
+                     "filterTypes": [{
+                        "condition": "EQUALS",
+                        "filterType": "properties",
+                        "metricKey": "Configuration|vSAN|encryption",
+                        "metricValue": {
+                           "isStringMetric": true,
+                           "value": "Enabled"
+                        }
+                     }],
+                     "resourceKind": "002028VirtualAndPhysicalSANAdapterVirtualSANDCCluster"
+                  }],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "filterMode": "tagPicker",
+               "mode": "all",
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": 0},
+               "resource": [],
+               "selectFirstRow": {"selectFirstRow": false},
+               "selfProvider": {"selfProvider": false},
+               "tagFilter": {
+                  "path": ["/source/kind/kind:resourceKind:id:0_::_"],
+                  "value": {
+                     "adapterInstance": [],
+                     "adapterKind": [],
+                     "bus": [],
+                     "collector": [],
+                     "day": [],
+                     "exclaim": false,
+                     "healthRange": [],
+                     "kind": ["resourceKind:id:0_::_"],
+                     "maintenanceSchedule": [],
+                     "state": [],
+                     "status": [],
+                     "tag": [],
+                     "tier": []
+                  }
+               },
+               "title": "Select an encrypted vSAN Cluster"
+            },
+            "gridsterCoords": {
+               "h": 4,
+               "w": 8,
+               "x": 1,
+               "y": 1
+            },
+            "height": 210,
+            "id": "4e0d9824-f826-4107-ac94-72f0bcb97312",
+            "states": [{
+               "key": "permResGrid_widget_1635b350-c49c-4af5-9509-475ae012d9b3_4e0d9824-f826-4107-ac94-72f0bcb97312",
+               "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%25255Ewidth%25253Dn%2525253A308%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah4%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah5%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah6%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah11%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah12%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah14%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253Ah16%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah17%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah18%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah19%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah20%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah21%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah22%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah23%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah24%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah25%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah26%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah27%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah28%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah29%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah30%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah31%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah32%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah33%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah34%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah35%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah36%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah37%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah38%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah39%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah40%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah41%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah42%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah43%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah44%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah45%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah46%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100"
+            }],
+            "title": "Select an encrypted vSAN Cluster",
+            "type": "ResourceList"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [{
+                  "attributeKind": {"value": ""},
+                  "color": {
+                     "maxValue": 1,
+                     "minValue": 0,
+                     "thresholds": {
+                        "colors": [
+                           "#FF0000",
+                           "#FF0000",
+                           "#888800",
+                           "#00FF00"
+                        ],
+                        "values": [
+                           0,
+                           50,
+                           100
+                        ]
+                     }
+                  },
+                  "colorBy": {
+                     "metricKey": "Super Metric|sm_e63df73a-1b68-4510-9bf0-dc1c268e1b55",
+                     "value": "Super Metric|vSAN Capacity Disk Encryption Status"
+                  },
+                  "filterMode": "tagPicker",
+                  "focusOnGroups": true,
+                  "groupBy": {
+                     "id": "004null002028VirtualAndPhysicalSANAdapterVirtualSANDiskGroup",
+                     "parentId": "VirtualAndPhysicalSANAdapter",
+                     "parentText": "vSAN Adapter",
+                     "text": "vSAN Disk Group",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:1_::_"
+                  },
+                  "mode": {"mode": false},
+                  "name": "Capacity Disk Encryption Status",
+                  "relationalGrouping": false,
+                  "resourceKind": "resourceKind:id:2_::_",
+                  "sizeBy": {
+                     "metricKey": null,
+                     "value": ""
+                  },
+                  "solidColoring": true,
+                  "thenBy": null
+               }],
+               "depth": 10,
+               "mode": "all",
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": [
+                  1,
+                  -1,
+                  0
+               ]},
+               "resource": [],
+               "selfProvider": {"selfProvider": false},
+               "title": "Are Capacity Disks Encrypted?",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 6,
+               "w": 4,
+               "x": 5,
+               "y": 5
+            },
+            "height": 324,
+            "id": "5dee045d-a4b1-4fa6-ab2c-e6114b9881a5",
+            "states": [{
+               "key": "perm_HeatMap_widget_1635b350-c49c-4af5-9509-475ae012d9b3_5dee045d-a4b1-4fa6-ab2c-e6114b9881a5",
+               "value": "o%3A"
+            }],
+            "title": "Are Capacity Disks Encrypted?",
+            "type": "Heatmap"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [{
+                  "attributeKind": {"value": ""},
+                  "color": {
+                     "maxValue": 1,
+                     "minValue": 0,
+                     "thresholds": {
+                        "colors": [
+                           "#FF0000",
+                           "#FF0000",
+                           "#888800",
+                           "#00FF00"
+                        ],
+                        "values": [
+                           0,
+                           50,
+                           100
+                        ]
+                     }
+                  },
+                  "colorBy": {
+                     "metricKey": "Super Metric|sm_2b96811b-e9a9-4631-99e1-79ae87ecee72",
+                     "value": "Super Metric|vSAN Cache Disk Encryption Status"
+                  },
+                  "filterMode": "tagPicker",
+                  "focusOnGroups": true,
+                  "groupBy": {
+                     "id": "004null002028VirtualAndPhysicalSANAdapterVirtualSANDiskGroup",
+                     "parentId": "VirtualAndPhysicalSANAdapter",
+                     "parentText": "vSAN Adapter",
+                     "text": "vSAN Disk Group",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:1_::_"
+                  },
+                  "mode": {"mode": false},
+                  "name": "Cache Disk Encryption Status",
+                  "relationalGrouping": false,
+                  "resourceKind": "resourceKind:id:3_::_",
+                  "sizeBy": {
+                     "metricKey": null,
+                     "value": ""
+                  },
+                  "solidColoring": true,
+                  "thenBy": null
+               }],
+               "depth": 10,
+               "mode": "all",
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": [
+                  1,
+                  -1,
+                  0
+               ]},
+               "resource": [],
+               "selfProvider": {"selfProvider": false},
+               "title": "Are Cache Disks Encrypted?",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 6,
+               "w": 4,
+               "x": 1,
+               "y": 11
+            },
+            "height": 324,
+            "id": "cd57ab45-4d5d-4a48-bb8b-93c85a43c767",
+            "states": [{
+               "key": "perm_HeatMap_widget_1635b350-c49c-4af5-9509-475ae012d9b3_cd57ab45-4d5d-4a48-bb8b-93c85a43c767",
+               "value": "o%3A"
+            }],
+            "title": "Are Cache Disks Encrypted?",
+            "type": "Heatmap"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [{
+                  "attributeKind": {"value": ""},
+                  "color": {
+                     "maxValue": 1,
+                     "minValue": 0,
+                     "thresholds": {
+                        "colors": [
+                           "#FF0000",
+                           "#FF0000",
+                           "#888800",
+                           "#00FF00"
+                        ],
+                        "values": [
+                           0,
+                           50,
+                           100
+                        ]
+                     }
+                  },
+                  "colorBy": {
+                     "metricKey": "Super Metric|sm_ad58ed57-63cb-43c1-9ec9-ba9157167b74",
+                     "value": "Super Metric|vSAN Host Encryption Status"
+                  },
+                  "filterMode": "tagPicker",
+                  "focusOnGroups": true,
+                  "groupBy": {
+                     "id": "004null002028VirtualAndPhysicalSANAdapterVirtualSANDCCluster",
+                     "parentId": "VirtualAndPhysicalSANAdapter",
+                     "parentText": "vSAN Adapter",
+                     "text": "vSAN Cluster",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:0_::_"
+                  },
+                  "mode": {"mode": false},
+                  "name": "Host Encryption Status",
+                  "relationalGrouping": false,
+                  "resourceKind": "resourceKind:id:4_::_",
+                  "sizeBy": {
+                     "metricKey": null,
+                     "value": ""
+                  },
+                  "solidColoring": true,
+                  "thenBy": null
+               }],
+               "depth": 10,
+               "mode": "all",
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": [
+                  1,
+                  -1,
+                  0
+               ]},
+               "resource": [],
+               "selfProvider": {"selfProvider": false},
+               "title": "Are Hosts Encrypted?",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 6,
+               "w": 4,
+               "x": 1,
+               "y": 5
+            },
+            "height": 324,
+            "id": "ffef1dbc-6262-4cc7-a95e-cb60c360dbf4",
+            "states": [{
+               "key": "perm_HeatMap_widget_1635b350-c49c-4af5-9509-475ae012d9b3_ffef1dbc-6262-4cc7-a95e-cb60c360dbf4",
+               "value": "o%3A"
+            }],
+            "title": "Are Hosts Encrypted?",
+            "type": "Heatmap"
+         }
+      ]
+   }],
+   "entries": {"resourceKind": [
+      {
+         "adapterKindKey": "VirtualAndPhysicalSANAdapter",
+         "internalId": "resourceKind:id:3_::_",
+         "resourceKindKey": "CacheDisk"
+      },
+      {
+         "adapterKindKey": "VirtualAndPhysicalSANAdapter",
+         "internalId": "resourceKind:id:0_::_",
+         "resourceKindKey": "VirtualSANDCCluster"
+      },
+      {
+         "adapterKindKey": "VMWARE",
+         "internalId": "resourceKind:id:4_::_",
+         "resourceKindKey": "HostSystem"
+      },
+      {
+         "adapterKindKey": "VirtualAndPhysicalSANAdapter",
+         "internalId": "resourceKind:id:1_::_",
+         "resourceKindKey": "VirtualSANDiskGroup"
+      },
+      {
+         "adapterKindKey": "VirtualAndPhysicalSANAdapter",
+         "internalId": "resourceKind:id:2_::_",
+         "resourceKindKey": "CapacityDisk"
+      }
+   ]},
+   "uuid": "0c9dbd22-c45c-4e0b-aa2c-d3d99eee7135"
+}
